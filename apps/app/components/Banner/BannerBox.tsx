@@ -21,13 +21,13 @@ export const BannerBox: FC<
   return (
     <Box
       className={className}
-      style={{ height: `${props.data.height}rem`, padding: '1 rem' }}
+      style={{ height: `${props.data?.height}rem`, padding: '1 rem' }}
       id={props.id}
       onMouseMove={props.onMouseMove}
       onDoubleClick={props.onDoubleClick}
       onClick={props.onClick}
     >
-      {props.data?.text} {props.data.height} rem
+      {props.data?.text} {props.data?.height} rem
     </Box>
   );
 };
